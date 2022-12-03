@@ -83,7 +83,7 @@ def func(message):
         bot.send_message(message.chat.id, text='😇', reply_markup=markup)
     elif (message.text == "👨‍💻Связаться с создателем"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        bot.send_message(message.chat.id,text="Всем привет я сделал этого бота используя api от [GeorgiyDemo](https://github.com/GeorgiyDemo) и [Daniil_Utkin](https://github.com/erlnby), также мне помогали собрать общую информацию ребята из группы НАУ22-3.\nВесь основной код бота я написал сам за 48 часов, если у вас есть какие-то предложения или же вы хотите написать отзыв лично мне в лс, то я был бы очень рад вас услышать!😇😇😇\n\nМой [тг](https://t.me/sulfat_mgso4)",
+        bot.send_message(message.chat.id,text="Всем привет я сделал этого бота используя api от [GeorgiyDemo](https://github.com/GeorgiyDemo) и [Daniil_Utkin](https://github.com/erlnby), также мне помогали собрать общую информацию ребята из группы НАУ22-3.\nЕсли у вас есть какие-то предложения или же вы хотите написать отзыв лично мне в лс, то я был бы очень рад вас услышать!😇😇😇\n\nМой [тг](https://t.me/sulfat_mgso4)",
                          reply_markup=markup, parse_mode='Markdown', disable_web_page_preview=True)
         back = types.KeyboardButton("🔙Вернуться в главное меню")
         markup.add(back)
@@ -296,7 +296,7 @@ def func(message):
     elif (message.text == "Цитатник") or (message.text == '©️Цитатник'):
         f = open('citati.txt').read()
         c = f.replace('#','©').replace('_',' ').split('\n\n')
-        r = random.randint(0,63)
+        r = random.randint(0,62)
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         bot.send_message(message.chat.id,text=c[r],reply_markup=markup, parse_mode='Markdown')
     else:
