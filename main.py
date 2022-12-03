@@ -5,8 +5,7 @@ from telebot import types
 from api import FaAPI
 import datetime
 from schedule import raspisanie
-#import config
-#todo поставить бота
+#todo разделять сообщения с расписанием, добавление пункта с направлениями
 bot = telebot.TeleBot('5820580999:AAEl6HI68CTWPhkSCExCZbN_3sJ13UQieTc')
 
 @bot.message_handler(commands=['start'])
