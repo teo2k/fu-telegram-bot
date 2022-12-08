@@ -1,5 +1,5 @@
 while :
 do
- 	sudo /fu-telegram-bot/main.py start
-  sudo /fu-telegram-bot/work_in_progress.py start
+  python3.10 main.py start
+  work_in_progress.py start
 done
