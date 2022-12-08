@@ -19,3 +19,5 @@ def func(message):
         bot.send_message(message.chat.id, text="Попробуйте чуть позже")
     else:
         bot.send_message(message.chat.id, text="Попробуйте чуть позже")
+
+bot.polling(none_stop=True)
