@@ -11,7 +11,7 @@ params = {
     'chat_id': '-1001504118384',
     'text': 'ATTENTION БОТ УПАЛ',
 }
-response = requests.get('https://api.telegram.org/bot'+TOKEN+'/sendMessage', params=params)
+response = requests.get('https://api.telegram.org/bot'+'5820580999:AAEl6HI68CTWPhkSCExCZbN_3sJ13UQieTc'+'/sendMessage', params=params)
 
 @bot.message_handler(content_types=['text'])
 def func(message):
